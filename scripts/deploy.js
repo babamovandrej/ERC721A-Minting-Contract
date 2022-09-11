@@ -1,10 +1,10 @@
+const hre = require('hardhat');
+
 async function main() {
     
     // Grab the contract factory 
-    const NFT_Mint = await ethers.getContractFactory("NFT_Mint");
- 
-    // Start deployment, returning a promise that resolves to a contract object
-    const TEST = await NFT_Mint.deploy(); // Instance of the contract 
+    const NFT_Mint = await hre.ethers.getContractFactory("NFT_Mint");
+    const TEST = await NFT_Mint.deploy("",""); //Add constructor arguments to deploy function
     console.log("Contract deployed to address:", TEST.address);
  }
  

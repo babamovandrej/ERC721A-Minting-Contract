@@ -5,12 +5,12 @@ require("@nomiclabs/hardhat-ethers");
 
 module.exports = {
    solidity: "0.8.10",
-   defaultNetwork: "kovan",
+   defaultNetwork: "rinkeby",
    networks: {
       hardhat: {},
-      kovan: {
-         //use ankr's public RPC if you want to launch the contract on Mainnet -> rpc.ankr.com/optimism
-         url: "https://kovan.optimism.io/",
+      rinkeby: {
+         //Insert the endpoint url below to connect to rinkeby
+         url: "",
          accounts: [`0x${process.env.PRIVATE_KEY}`]
       }
    },

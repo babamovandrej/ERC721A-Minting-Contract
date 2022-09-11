@@ -331,8 +331,8 @@
       ]
     },
     "/Users/andrejbabamov/Desktop/Andrej Babamov GITHUB/NFT_Minting_Contract/contracts/NFT_Mint.sol": {
-      "lastModificationDate": 1662733502216,
-      "contentHash": "2c74c22957c68e77f687b00f3c62e493",
+      "lastModificationDate": 1662906448209,
+      "contentHash": "e537be8d5b7f2a0a07434b12d1a962cd",
       "sourceName": "contracts/NFT_Mint.sol",
       "solcConfig": {
         "version": "0.8.10",
@@ -367,7 +367,7 @@
         "^0.8.10"
       ],
       "artifacts": [
-        "Test_Contract"
+        "NFT_Mint"
       ]
     },
     "/Users/andrejbabamov/Desktop/Andrej Babamov GITHUB/NFT_Minting_Contract/node_modules/@openzeppelin/contracts/access/Ownable.sol": {

@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 
-contract Test_Contract is ERC721A, Ownable {
+contract NFT_Mint is ERC721A, Ownable {
     //Imports for Strings.sol and SafeMath.sol
     using Strings for uint256;
     using SafeMath for uint256;
@@ -26,9 +26,9 @@ contract Test_Contract is ERC721A, Ownable {
     constructor(
         string memory baseURI,
         string memory Extension
-    ) ERC721A("Test_Contract", "TEST") {
-      tokenURIBase = baseURI;
-      URIExtension = Extension;
+    ) ERC721A("NFT_Mint", "MINT") {
+       tokenURIBase = baseURI;
+       URIExtension = Extension;
     }
 
     function togglePublicSaleStarted() external onlyOwner {
